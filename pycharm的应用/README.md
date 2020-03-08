@@ -22,3 +22,10 @@ MORE...
 另外 termimal窗口, 因为其接受输入, 所以不要绑定 command+2这样, 应该绑定comand+shift+2. 为什么不绑定command+ctr+2, 因为ctrl和command在同一行, 按着不方便.  
 另外, 还可以按command+shift+左右调整工具窗口的大小.  
 tip: 如果想让terminal窗口最大化, 又可以使用快捷键快速`显示/隐藏`, 那么不要把编辑区完全挤没了, 留一点空间, 这样下次就能记住terminal窗口的大小了, 否则会把terminal窗口尺寸强行设置为屏幕的一半大小.  
+
+
+
+# Pycharm 显示提示
+
+按住 command 键或者 ctrl+q， 鼠标放到一个函数上面就有了。
+
