@@ -1,0 +1,129 @@
+[user]
+	name = notfreshmbp
+	email = 1195056983@qq.com
+[alias]
+	superlog = log --color --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s%Creset %Cgreen(%cd) %C(bold blue)<%an>%Creset' --abbrev-commit --date='format:%Y-%m-%d %H:%M:%S'
+	l = log --color --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s%Creset %Cgreen(%cd) %C(bold blue)<%an>%Creset' --abbrev-commit --date='format:%Y-%m-%d %H:%M:%S'
+	superlogl = log --color --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd) %C(bold blue)<%an>%Creset %ae ' --abbrev-commit --date='format:%Y-%m-%d %H:%M:%S'
+	lm = log --color --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd) %C(bold blue)<%an>%Creset %ae ' --abbrev-commit --date='format:%Y-%m-%d %H:%M:%S'
+	st = status -s
+	ck = checkout
+	his = log --pretty='%d|| %h || %s || %an||%ad ' --date='format:%Y-%m-%d %H:%M'  --reverse --all
+	ap = add -p
+	l2 = log --color --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s%Creset %Cgreen(%cd) %C(bold blue)<%an>%Creset' --abbrev-commit --date='format:%Y-    %m-%d %H:%M:%S'
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[core]
+	quotepath = false
+[clean]
+	requireForce = true
+[filesystem "Oracle Corporation|1.8.0_191|/dev/disk1s1"]
+	timestampResolution = 1001 milliseconds
+	minRacyThreshold = 0 nanoseconds
+
+
+
+
+[url "https://gitlab.com/webrtc-mirror/webrtc.git"]
+	insteadOf = https://chromium.googlesource.com/external/webrtc.git
+[url "https://gitlab.com/webrtc-mirror/base.git"]
+	insteadOf = https://chromium.googlesource.com/chromium/src/base
+[url "https://gitlab.com/webrtc-mirror/build.git"]
+	insteadOf = https://chromium.googlesource.com/chromium/src/build
+[url "https://gitlab.com/webrtc-mirror/buildtools.git"]
+	insteadOf = https://chromium.googlesource.com/chromium/src/buildtools
+[url "https://gitlab.com/webrtc-mirror/gradle.git"]
+	insteadOf = https://chromium.googlesource.com/external/github.com/gradle/gradle.git
+[url "https://gitlab.com/webrtc-mirror/ios.git"]
+	insteadOf = https://chromium.googlesource.com/chromium/src/ios.git
+[url "https://gitlab.com/webrtc-mirror/testing.git"]
+	insteadOf = https://chromium.googlesource.com/chromium/src/testing
+[url "https://gitlab.com/webrtc-mirror/third_party.git"]
+	insteadOf = https://chromium.googlesource.com/chromium/src/third_party
+[url "https://gitlab.com/webrtc-mirror/clang-format.git"]
+	insteadOf = https://chromium.googlesource.com/chromium/llvm-project/cfe/tools/clang-format.git
+[url "https://gitlab.com/webrtc-mirror/libcxx.git"]
+	insteadOf = https://chromium.googlesource.com/chromium/llvm-project/libcxx.git
+[url "https://gitlab.com/webrtc-mirror/libcxxabi.git"]
+	insteadOf = https://chromium.googlesource.com/chromium/llvm-project/libcxxabi.git
+[url "https://gitlab.com/webrtc-mirror/libunwind.git"]
+	insteadOf = https://chromium.googlesource.com/external/llvm.org/libunwind.git
+[url "https://gitlab.com/webrtc-mirror/android_ndk.git"]
+	insteadOf = https://chromium.googlesource.com/android_ndk.git
+[url "https://gitlab.com/webrtc-mirror/android_tools.git"]
+	insteadOf = https://chromium.googlesource.com/android_tools.git
+[url "https://gitlab.com/webrtc-mirror/auto.git"]
+	insteadOf = https://chromium.googlesource.com/external/github.com/google/auto.git
+[url "https://gitlab.com/webrtc-mirror/catapult.git"]
+	insteadOf = https://chromium.googlesource.com/catapult.git
+[url "https://gitlab.com/webrtc-mirror/compact_enc_det.git"]
+	insteadOf = https://chromium.googlesource.com/external/github.com/google/compact_enc_det.git
+[url "https://gitlab.com/webrtc-mirror/colorama.git"]
+	insteadOf = https://chromium.googlesource.com/external/colorama.git
+[url "https://gitlab.com/webrtc-mirror/depot_tools.git"]
+	insteadOf = https://chromium.googlesource.com/chromium/tools/depot_tools.git
+[url "https://gitlab.com/webrtc-mirror/errorprone.git"]
+	insteadOf = https://chromium.googlesource.com/chromium/third_party/errorprone.git
+[url "https://gitlab.com/webrtc-mirror/ffmpeg.git"]
+	insteadOf = https://chromium.googlesource.com/chromium/third_party/ffmpeg.git
+[url "https://gitlab.com/webrtc-mirror/findbugs.git"]
+	insteadOf = https://chromium.googlesource.com/chromium/deps/findbugs.git
+[url "https://gitlab.com/webrtc-mirror/freetype2.git"]
+	insteadOf = https://chromium.googlesource.com/chromium/src/third_party/freetype2.git
+[url "https://gitlab.com/webrtc-mirror/harfbuzz.git"]
+	insteadOf = https://chromium.googlesource.com/external/github.com/harfbuzz/harfbuzz.git
+[url "https://gitlab.com/webrtc-mirror/gtest-parallel.git"]
+	insteadOf = https://chromium.googlesource.com/external/github.com/google/gtest-parallel
+[url "https://gitlab.com/webrtc-mirror/googletest.git"]
+	insteadOf = https://chromium.googlesource.com/external/github.com/google/googletest.git
+[url "https://gitlab.com/webrtc-mirror/icu.git"]
+	insteadOf = https://chromium.googlesource.com/chromium/deps/icu.git
+[url "https://gitlab.com/webrtc-mirror/jsr-305.git"]
+	insteadOf = https://chromium.googlesource.com/external/jsr-305.git
+[url "https://gitlab.com/webrtc-mirror/jsoncpp.git"]
+	insteadOf = https://chromium.googlesource.com/external/github.com/open-source-parsers/jsoncpp.git
+[url "https://gitlab.com/webrtc-mirror/junit.git"]
+	insteadOf = https://chromium.googlesource.com/external/junit.git
+[url "https://gitlab.com/webrtc-mirror/fuzzer.git"]
+	insteadOf = https://chromium.googlesource.com/chromium/llvm-project/compiler-rt/lib/fuzzer.git
+[url "https://gitlab.com/webrtc-mirror/libjpeg_turbo.git"]
+	insteadOf = https://chromium.googlesource.com/chromium/deps/libjpeg_turbo.git
+[url "https://gitlab.com/webrtc-mirror/libsrtp.git"]
+	insteadOf = https://chromium.googlesource.com/chromium/deps/libsrtp.git
+[url "https://gitlab.com/webrtc-mirror/libvpx.git"]
+	insteadOf = https://chromium.googlesource.com/webm/libvpx.git
+[url "https://gitlab.com/webrtc-mirror/libyuv.git"]
+	insteadOf = https://chromium.googlesource.com/libyuv/libyuv.git
+[url "https://gitlab.com/webrtc-mirror/linux-syscall-support.git"]
+	insteadOf = https://chromium.googlesource.com/linux-syscall-support.git
+[url "https://gitlab.com/webrtc-mirror/mockito.git"]
+	insteadOf = https://chromium.googlesource.com/external/mockito/mockito.git
+[url "https://gitlab.com/webrtc-mirror/nasm.git"]
+	insteadOf = https://chromium.googlesource.com/chromium/deps/nasm.git
+[url "https://gitlab.com/webrtc-mirror/openh264.git"]
+	insteadOf = https://chromium.googlesource.com/external/github.com/cisco/openh264
+[url "https://gitlab.com/webrtc-mirror/requests.git"]
+	insteadOf = https://chromium.googlesource.com/external/github.com/kennethreitz/requests.git
+[url "https://gitlab.com/webrtc-mirror/robolectric.git"]
+	insteadOf = https://chromium.googlesource.com/external/robolectric.git
+[url "https://gitlab.com/webrtc-mirror/ub-uiautomator.git"]
+	insteadOf = https://chromium.googlesource.com/chromium/third_party/ub-uiautomator.git
+[url "https://gitlab.com/webrtc-mirror/usrsctp.git"]
+	insteadOf = https://chromium.googlesource.com/external/github.com/sctplab/usrsctp
+[url "https://gitlab.com/webrtc-mirror/binaries.git"]
+	insteadOf = https://chromium.googlesource.com/chromium/deps/yasm/binaries.git
+[url "https://gitlab.com/webrtc-mirror/patched-yasm.git"]
+	insteadOf = https://chromium.googlesource.com/chromium/deps/yasm/patched-yasm.git
+[url "https://gitlab.com/webrtc-mirror/tools.git"]
+	insteadOf = https://chromium.googlesource.com/chromium/src/tools
+[url "https://gitlab.com/webrtc-mirror/client-py.git"]
+	insteadOf = https://chromium.googlesource.com/infra/luci/client-py.git
+[url "https://gitlab.com/webrtc-mirror/boringssl.git"]
+	insteadOf = https://boringssl.googlesource.com/boringssl.git
+[url "http://120.92.49.206:3232/chromiumsrc/webrtc.git"]
+	insteadOf = https://chromium.googlesource.com/external/webrtc.git
+[http]
+	sslVerify = true
