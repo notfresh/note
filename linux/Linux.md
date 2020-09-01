@@ -1,6 +1,8 @@
 # tar
 tar --exclude="git_faq/.git" -zcvf git_faq.tgz git_faq 压缩
 
+tar --exclude="./jd_image_crawler_0/crawls/" --exclude="*.log"  --exclude="*.jpg"  --exclude="*.out" --exclude="jd_image_crawler_0/jd_crawler_0/data/" --exclude="*.pyc" --exclude="jd_image_crawler_0/crawls/*" --exclude="jd_image_crawler_0/jd_crawler_0/data/*"   --exclude="*__pycache__*"  --exclude="*.tgz"   -czvf jd_image_crawler_0.tgz jd_image_crawler_0
+
 # shell快捷键
 Q:
 有时候调用历史命令，都是很长的那种，然后发现并不是自己想要的，需要重新输入，如何快速删除已有/已输入的命令/内容？
