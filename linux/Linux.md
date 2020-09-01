@@ -719,6 +719,10 @@ du -sh /输入你想要查询的文件夹路径
 
 
 
+# zip命令
+ zip git_faq.zip -r git_faq -x "git_faq/.git/*" 
+ 当涉及正则的时候，最好引起来。
+
 
 
 # 参考
