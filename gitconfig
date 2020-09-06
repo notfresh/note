@@ -2,15 +2,11 @@
 	name = notfreshmbp
 	email = 1195056983@qq.com
 [alias]
-	superlog = log --color --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s%Creset %Cgreen(%cd) %C(bold blue)<%an>%Creset' --abbrev-commit --date='format:%Y-%m-%d %H:%M:%S'
-	l = log --color --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s%Creset %Cgreen(%cd) %C(bold blue)<%an>%Creset' --abbrev-commit --date='format:%Y-%m-%d %H:%M:%S'
-	superlogl = log --color --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd) %C(bold blue)<%an>%Creset %ae ' --abbrev-commit --date='format:%Y-%m-%d %H:%M:%S'
-	lm = log --color --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd) %C(bold blue)<%an>%Creset %ae ' --abbrev-commit --date='format:%Y-%m-%d %H:%M:%S'
+	l = log --color --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s%Creset %Cgreen(%cd) %C(bold blue)<%an>%Creset' --abbrev-commit --date='format:%Y-%m-%d %H:%M:%S'		
 	st = status -s
 	ck = checkout
-	his = log --pretty='%d|| %h || %s || %an||%ad ' --date='format:%Y-%m-%d %H:%M'  --reverse --all
-	ap = add -p
-	l2 = log --color --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s%Creset %Cgreen(%cd) %C(bold blue)<%an>%Creset' --abbrev-commit --date='format:%Y-    %m-%d %H:%M:%S'
+	ckp = checkout -p	
+	ap = add -p	
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
