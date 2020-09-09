@@ -2,7 +2,16 @@
 tar --exclude="git_faq/.git" -zcvf git_faq.tgz git_faq 压缩
 
 
-    tar --exclude="./jd_image_crawler_0/crawls/" --exclude="*.log"  --exclude="*.jpg"  --exclude="*.out" --exclude="jd_image_crawler_0/jd_crawler_0/data/" --exclude="*.pyc" --exclude="jd_image_crawler_0/crawls/*" --exclude="jd_image_crawler_0/jd_crawler_0/data/*"   --exclude="*__pycache__*"  --exclude="*.tgz"   -czvf jd_image_crawler_0.tgz jd_image_crawler_0
+tar --exclude="./jd_image_crawler_0/crawls/" --exclude="*.log"  --exclude="*.jpg"  --exclude="*.out" --exclude="jd_image_crawler_0/jd_crawler_0/data/" --exclude="*.pyc" --exclude="jd_image_crawler_0/crawls/*" --exclude="jd_image_crawler_0/jd_crawler_0/data/*"   --exclude="*__pycache__*"  --exclude="*.tgz"   -czvf jd_image_crawler_0.tgz jd_image_crawler_0
+
+
+# grep 只看附近几行
+简单来说，就是ABC。
+A ->After
+B ->Before
+C ->Context
+比如grep -A3 'foobar' a.txt，即把匹配到foobar的行的下面3行也给显示出来。
+查看ip地址 ifconfig | grep -A8 'en0:'
 
 
 # shell快捷键
