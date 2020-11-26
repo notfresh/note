@@ -3,8 +3,13 @@ tar --exclude="git_faq/.git" -zcvf git_faq.tgz git_faq 压缩
 
 
 
-
 tar --exclude="./jd_image_crawler_0/crawls/" --exclude="*.log"  --exclude="*.jpg"  --exclude="*.out" --exclude="jd_image_crawler_0/jd_crawler_0/data/" --exclude="*.pyc" --exclude="jd_image_crawler_0/crawls/*" --exclude="jd_image_crawler_0/jd_crawler_0/data/*"   --exclude="*__pycache__*"  --exclude="*.tgz"   -czvf jd_image_crawler_0.tgz jd_image_crawler_0
+
+
+
+tar命令，在linux下，如果指定一个目录，exclude 是包含这个压缩的路径在内的，这点和macOS不同。
+
+
 
 ### 只看不解压 查看
  tar -tvf extundelete-0.2.4.tar.bz2 
